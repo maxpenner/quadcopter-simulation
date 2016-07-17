@@ -1,5 +1,5 @@
 # quadcopter_simulation
-C++ Real-Time Quadcopter Simulation
+This is a C++ Real-Time Quadcopter Simulation.
 
-How to compile?
+## How to compile?
 
