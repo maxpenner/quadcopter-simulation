@@ -182,5 +182,8 @@
     <ClInclude Include="irr_keytimer.h">
       <Filter>Headerdateien\renderer</Filter>
     </ClInclude>
+    <ClInclude Include="vectorTypes.h">
+      <Filter>Headerdateien\quadcopter</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
