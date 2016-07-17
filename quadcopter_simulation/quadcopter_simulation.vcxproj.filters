@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter">
+      <UniqueIdentifier>{e1072dd0-43e7-4c68-b517-f20a2f33c299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\sensor">
+      <UniqueIdentifier>{43369483-add9-4ecd-bfb1-087f2fa1630b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\receiver">
+      <UniqueIdentifier>{16bf9d27-e130-400d-8d40-4ae100e8e2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\diff_equation">
+      <UniqueIdentifier>{4e77c958-dc32-49a9-b0e1-d171a6560213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\renderer">
+      <UniqueIdentifier>{06047a70-6292-412b-8dda-3ee5e0191048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\renderer">
+      <UniqueIdentifier>{2dbd1812-19d5-4db2-942d-707213607cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter">
+      <UniqueIdentifier>{7d3d7335-2eb5-4ecf-8e05-00a607810f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\diff_equation">
+      <UniqueIdentifier>{02b962e9-bbc8-43f3-92c8-d1694595600e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\sensor">
+      <UniqueIdentifier>{267d1c78-88a5-4946-8c07-baf18d3a089e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\receiver">
+      <UniqueIdentifier>{70992404-d034-4710-8186-627de27f9b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\timer">
+      <UniqueIdentifier>{91f8af2b-3311-4579-8863-255f7a20080d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\timer">
+      <UniqueIdentifier>{6ce3608d-2ff5-4f3a-bd08-64c08cd4bd85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\esc_motor">
+      <UniqueIdentifier>{e68a87f2-a700-4e01-98b5-3be9e06fde77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\esc_motor">
+      <UniqueIdentifier>{f8f01614-b3f1-402b-833d-6eb51dee2356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\sensor_fusion">
+      <UniqueIdentifier>{b4e12701-f9e5-4b70-9b2d-42a02c45c776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\sensor_fusion">
+      <UniqueIdentifier>{ae1e7ac7-480b-4772-a85d-22b278e80789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\quadcopter\stabilizer">
+      <UniqueIdentifier>{2167f62f-f2c5-4735-b2b9-5e74cd313d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\quadcopter\stabilizer">
+      <UniqueIdentifier>{e86a32cd-954f-417a-9f00-6779cb32de0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Quelldateien\quadcopter\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="quadcopter.cpp">
+      <Filter>Quelldateien\quadcopter</Filter>
+    </ClCompile>
+    <ClCompile Include="utils_diffequation.cpp">
+      <Filter>Quelldateien\quadcopter\diff_equation</Filter>
+    </ClCompile>
+    <ClCompile Include="magnetometer.cpp">
+      <Filter>Quelldateien\quadcopter\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="barometer.cpp">
+      <Filter>Quelldateien\quadcopter\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="gyroscope.cpp">
+      <Filter>Quelldateien\quadcopter\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="receiver.cpp">
+      <Filter>Quelldateien\quadcopter\receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="irr_renderer.cpp">
+      <Filter>Quelldateien\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="irr_quadcopter_3D.cpp">
+      <Filter>Quelldateien\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="accelerometer.cpp">
+      <Filter>Quelldateien\quadcopter\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="esc_motor.cpp">
+      <Filter>Quelldateien\quadcopter\esc_motor</Filter>
+    </ClCompile>
+    <ClCompile Include="PID.cpp">
+      <Filter>Quelldateien\quadcopter\stabilizer</Filter>
+    </ClCompile>
+    <ClCompile Include="sensorFusion.cpp">
+      <Filter>Quelldateien\quadcopter\sensor_fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="complementaryFilter.cpp">
+      <Filter>Quelldateien\quadcopter\sensor_fusion</Filter>
+    </ClCompile>
+    <ClCompile Include="stabilizer.cpp">
+      <Filter>Quelldateien\quadcopter\stabilizer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="barometer.h">
+      <Filter>Headerdateien\quadcopter\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="gyroscope.h">
+      <Filter>Headerdateien\quadcopter\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="magnetometer.h">
+      <Filter>Headerdateien\quadcopter\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Headerdateien\quadcopter\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="receiver.h">
+      <Filter>Headerdateien\quadcopter\receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="utils_diffequation.h">
+      <Filter>Headerdateien\quadcopter\diff_equation</Filter>
+    </ClInclude>
+    <ClInclude Include="irr_renderer.h">
+      <Filter>Headerdateien\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="irr_quadcopter_3D.h">
+      <Filter>Headerdateien\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="irr_coordinate_axes.h">
+      <Filter>Headerdateien\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="accelerometer.h">
+      <Filter>Headerdateien\quadcopter\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="esc_motor.h">
+      <Filter>Headerdateien\quadcopter\esc_motor</Filter>
+    </ClInclude>
+    <ClInclude Include="sensorFusion.h">
+      <Filter>Headerdateien\quadcopter\sensor_fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="complementaryFilter.h">
+      <Filter>Headerdateien\quadcopter\sensor_fusion</Filter>
+    </ClInclude>
+    <ClInclude Include="PID.h">
+      <Filter>Headerdateien\quadcopter\stabilizer</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Headerdateien\quadcopter</Filter>
+    </ClInclude>
+    <ClInclude Include="main_config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="mathHelp.h">
+      <Filter>Headerdateien\quadcopter</Filter>
+    </ClInclude>
+    <ClInclude Include="stabilizer.h">
+      <Filter>Headerdateien\quadcopter\stabilizer</Filter>
+    </ClInclude>
+    <ClInclude Include="quadcopter.h">
+      <Filter>Headerdateien\quadcopter</Filter>
+    </ClInclude>
+    <ClInclude Include="irr_event_receiver.h">
+      <Filter>Headerdateien\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="irr_keytimer.h">
+      <Filter>Headerdateien\renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBA89B36-7E41-4828-8E53-1B21A37F0955}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>quadcopter_simulation</RootNamespace>
+    <ProjectName>quadcopter_simulation</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\thirdParty\irrlicht-1.8.3\irrlicht-1.8.3\include;$(SolutionDir)\thirdParty\eigen-eigen-25c4b01d1bbc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\thirdParty\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\thirdParty\irrlicht-1.8.3\irrlicht-1.8.3\include;$(SolutionDir)\thirdParty\eigen-eigen-25c4b01d1bbc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\thirdParty\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="accelerometer.cpp" />
+    <ClCompile Include="barometer.cpp" />
+    <ClCompile Include="complementaryFilter.cpp" />
+    <ClCompile Include="gyroscope.cpp" />
+    <ClCompile Include="magnetometer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="esc_motor.cpp" />
+    <ClCompile Include="stabilizer.cpp" />
+    <ClCompile Include="PID.cpp" />
+    <ClCompile Include="quadcopter.cpp" />
+    <ClCompile Include="irr_quadcopter_3D.cpp" />
+    <ClCompile Include="receiver.cpp" />
+    <ClCompile Include="irr_renderer.cpp" />
+    <ClCompile Include="sensorFusion.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="utils_diffequation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="barometer.h" />
+    <ClInclude Include="irr_event_receiver.h" />
+    <ClInclude Include="irr_keytimer.h" />
+    <ClInclude Include="main_config.h" />
+    <ClInclude Include="complementaryFilter.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="accelerometer.h" />
+    <ClInclude Include="irr_coordinate_axes.h" />
+    <ClInclude Include="gyroscope.h" />
+    <ClInclude Include="magnetometer.h" />
+    <ClInclude Include="esc_motor.h" />
+    <ClInclude Include="stabilizer.h" />
+    <ClInclude Include="PID.h" />
+    <ClInclude Include="quadcopter.h" />
+    <ClInclude Include="irr_quadcopter_3D.h" />
+    <ClInclude Include="receiver.h" />
+    <ClInclude Include="irr_renderer.h" />
+    <ClInclude Include="sensorFusion.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="mathHelp.h" />
+    <ClInclude Include="utils_diffequation.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
