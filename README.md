@@ -1,7 +1,5 @@
 # quadcopter_simulation
-This is a C++ Real-Time Quadcopter Simulation. It calculates the flight of the quadcopter by solving its differential equation. The quadcopter includes four noisy sensors: accelerometer, gyroscope, magnetometer and barometer. The frame mode is X, but it can be changed to +. The sensor fusion uses a 1st order complementary filter, the angle stabilizer consist of two concatenated PID controllers, likewise the altitude control.
-
-The sensors are currently called 200 times per second, the user input is updated 50 times per second. It is taken from the keyboard.
+This is a C++ Real-Time Quadcopter Simulation. It calculates the flight of the quadcopter by solving its differential equation. The quadcopter includes four noisy sensors: accelerometer, gyroscope, magnetometer and barometer. The frame mode is X, but it can be changed to +. The sensor fusion uses a 1st order complementary filter, the angle stabilizer consist of two concatenated PID controllers, likewise the altitude control. The sensors are currently called 200 times per second, the user input is updated 50 times per second. It is taken from the keyboard.
 
 The entire simulation consist of about 2000 lines of code, so it's still overseeable.
 
@@ -11,7 +9,7 @@ The entire simulation consist of about 2000 lines of code, so it's still oversee
 
 ## What is it good for?
 
-I used it to build a quadcopter of 450 mm and 1.2 kg. I can copy the stabilization algorithms for roll and pitch one-to-one (apart from some C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
+I used it to build a quadcopter of 450 mm and 1.2 kg. I can copy the stabilization algorithms for roll, pitch and yaw one-to-one (apart from some minor C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
 
 And I believe it saved me a lot of money.
 
