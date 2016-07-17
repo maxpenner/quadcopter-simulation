@@ -23,6 +23,6 @@ And I believe it saved me a lot of money.
 - Now it should compile.
 - When running the .exe files make sure the folder 'media' with its content and the Irrlicht.dll are found. Eigen doesn't have a .dll file.
 
-## Can it used with Linux?
+## Can it be used with Linux?
 
 It the current state, no. But if anybody can me show a simple Linux equivalent to Windows' 'GetAsyncKeyState()' I would be happy to port it.
