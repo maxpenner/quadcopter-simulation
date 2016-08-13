@@ -9,7 +9,7 @@ The entire simulation consist of about 2000 lines of code, so it's still oversee
 
 ## What is it good for?
 
-I used it to build a quadcopter of 450 mm and 1.2 kg. I can copy the stabilization algorithms for roll, pitch and yaw one-to-one (apart from some minor C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
+I used it to build a [quadcopter of 450 mm and 1.2 kg] (https://github.com/KyrellGod/quadcopter). I can copy the stabilization algorithms for roll, pitch and yaw one-to-one (apart from some minor C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
 
 And I believe it saved me a lot of money.
 
