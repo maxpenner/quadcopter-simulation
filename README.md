@@ -5,11 +5,11 @@ The entire simulation consist of about 2000 lines of code, so it's still oversee
 
 ## How does it look like?
 
-[YouTube Video] (https://www.youtube.com/watch?v=DGXSOvx3GmY)
+[YouTube Video](https://www.youtube.com/watch?v=DGXSOvx3GmY)
 
 ## What is it good for?
 
-I used it to build a [quadcopter of 450 mm and 1.2 kg] (https://github.com/KyrellGod/quadcopter). I can copy the stabilization algorithms for roll, pitch and yaw one-to-one (apart from some minor C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
+I used it to build a [quadcopter of 450 mm and 1.2 kg](https://github.com/KyrellGod/quadcopter). I can copy the stabilization algorithms for roll, pitch and yaw one-to-one (apart from some minor C++ related changes) and the quadcopter flies quite well. It also helped me to understand what impact noise can have, how the motors work, why you need accelerometer *and* gyroscope etc.
 
 And I believe it saved me a lot of money.
 
@@ -18,7 +18,7 @@ And I believe it saved me a lot of money.
 - Download the files.  
 - Open the project in Visual Studio C++ (I use Express 2015).  
 - Two libraries have to be linked:  
-  - [Eigen] (http://eigen.tuxfamily.org/index.php?title=Main_Page) for linear algebra  
+  - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) for linear algebra  
   - [Irrlicht](http://irrlicht.sourceforge.net/) for rendering  
 - Now it should compile.
 - When running the .exe files make sure the folder 'media' with its content and the Irrlicht.dll are found. Eigen doesn't have a .dll file.
