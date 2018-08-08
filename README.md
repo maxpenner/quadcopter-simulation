@@ -3,7 +3,7 @@ This is a C++ Real-Time Quadcopter Simulation. It calculates the flight of the q
 
 The entire simulation consist of about 2000 lines of code, so it's still overseeable.
 
-## How does it look like?
+## What does it look like?
 
 [YouTube Video](https://www.youtube.com/watch?v=DGXSOvx3GmY)
 
